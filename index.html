@@ -1,153 +1,58 @@
-<style>
-    html {
-        font-family: 'Open Sans', sans-serif;
-        background: #b2ece6; /* Blue-green background */
-        color: #000; /* Black text color */
-    }
-
-    a {
-        text-decoration: none;
-        color: #00bfa5; /* Blue-green link color */
-    }
-
-    hr {
-        background: #80cbc4; /* Light blue-green HR color */
-        margin: 15px 0;
-    }
-
-    #container {
-        display: flex;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-        background: #fff; /* White container background */
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-        margin-top: 20px;
-    }
-
-    #profile {
-        flex: 1;
-        margin-right: 20px;
-        text-align: center;
-        background: #00bfa5; /* Blue-green profile background */
-        color: #000; /* Black text color */
-        padding: 20px;
-        border-radius: 8px;
-    }
-
-    #profile img {
-        border-radius: 50%;
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-        margin: 10px 0;
-    }
-
-    #profile h1,
-    #profile p {
-        margin: 0;
-        color: #000; /* Black text color */
-    }
-
-    #info-cards {
-        flex: 2;
-    }
-
-    .card {
-        margin-bottom: 20px;
-        padding: 20px;
-        background: #fff; /* White card background */
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-    }
-
-    .card p {
-        font-size: 18px;
-        font-weight: bold;
-        margin: 0 0 10px;
-    }
-
-    .card ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    .card li {
-        margin-bottom: 8px;
-    }
-
-    .tags span {
-        font-size: 14px;
-        font-weight: normal;
-        color: #555;
-    }
-
-    .tags ~ a {
-        display: none;
-    }
-
-    .edit {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        color: #00bfa5;
-        font-size: 14px;
-    }
-
-    @media screen and (max-width: 768px) {
-        #container {
-            flex-direction: column;
-            align-items: center;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
-
-        #profile {
-            margin-right: 0;
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
         }
-
-        #info-cards {
-            width: 100%;
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
         }
-    }
-</style>
-
-<div id="container">
-    <div id="profile">
-        <img src="https://www.shutterstock.com/image-vector/anime-style-game-avatar-mascot-600nw-2322112663.jpg" alt="Profile-Image">
-        <h1 style="color: #000;">Mariz Yalung</h1>
-        <p style="color: #000;">Instructor at Holy Cross College</p>
-        <hr>
-        <p style="color: #000;"><strong>Email:</strong> yalungmariz@gmail.com</p>
-        <p style="color: #000;"><strong>Telephone:</strong> 09305161775</p>
-        <p style="color: #000;"><strong>Facebook:</strong> yalungmariz</p>
-    </div>
-    <div id="info-cards">
-        <div class="card">
-            <p>Work Experience</p>
+        
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to our website!</h1>
+        <nav>
             <ul>
-                <li>
-                    <p class="tags">Amertron - Clark, Angeles City | <span>2019</span></p>
-                    <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a>
-                </li>
-                <li>
-                    <p class="tags">Operator On Amertron - Pasig City, PH | <span>2022</span></p>
-                    <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a>
-                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="yalung.html">Yalung Mariz</a></li>
             </ul>
-        </div>
-        <div class="card">
-            <p>Education</p>
-            <ul>
-                <li>
-                    <p class="tags">Holy Cross College - Bachelor of Science in Information Technology | <span>June 2023</span></p>
-                    <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a>
-                </li>
-                <li>
-                    <p class="tags">Holy Cross College - Information and Communication Technology | <span>April 2019</span></p>
-                    <a class="edit" href="#"><i class="fas fa-pen stroke-transparent-blue"></i></a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
+        </nav>
+    </header>
+
+
+</body>
+</html>
